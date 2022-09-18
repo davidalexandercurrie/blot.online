@@ -15,6 +15,7 @@ import {
   footnoteNumber,
   footnoteTitle,
   superScriptLink,
+  scrollToElement,
 } from '../styles/Layout.module.css';
 
 const article = ({ pageContext }) => {
@@ -74,10 +75,11 @@ const article = ({ pageContext }) => {
             <div id="entry-footnotes" className={footnotes}>
               {pageContext.body.references.map(reference => (
                 <>
-                  <p
-                    id={`footnote-${reference.contentful_id}`}
-                    className={footnoteNumber}
-                  >
+                  <p className={footnoteNumber}>
+                    <span
+                      className={scrollToElement}
+                      id={`footnote-${reference.contentful_id}`}
+                    ></span>
                     {reference.number}
                   </p>
                   <div className={footnoteNote}>
