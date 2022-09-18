@@ -38,7 +38,8 @@ const about = ({ location }) => {
         <p className={pageP}>
           We are very grateful to the following for their generous support:
         </p>
-        <li className={noBulletList}>Chartwell Trust John & Jo Gow</li>
+        <li className={noBulletList}>Chartwell Trust</li>
+        <li className={noBulletList}>John & Jo Gow</li>
         <li className={noBulletList}>Michael Lett & Andrew Thomas</li>
         <li className={noBulletList}>David Currie</li>
         <li className={noBulletList}>Marcus Jackson</li>

@@ -15,14 +15,14 @@ const contact = () => {
           We welcome responses, proposals, criticism, support, all the feels.
         </p>
 
-        <li className={noBulletList}>
+        <p className={noBulletList}>
           Get in touch with us by email{' '}
           <a className="page-link" href="mailto:blotjournalonline@gmail.com">
             blotjournalonline@gmail.com
           </a>
-        </li>
+        </p>
 
-        <li className={noBulletList}>
+        <p className={noBulletList}>
           Follow BLOT on instagram{' '}
           <a
             className="page-link"
@@ -32,7 +32,7 @@ const contact = () => {
           >
             @blot.online
           </a>
-        </li>
+        </p>
       </div>
     </Layout>
   );
