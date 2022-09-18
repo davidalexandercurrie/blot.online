@@ -17,7 +17,6 @@ module.exports = {
         spaceId: 'lwz00y8jn7m3',
       },
     },
-    'gatsby-plugin-mdx',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
