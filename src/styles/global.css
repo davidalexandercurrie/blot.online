@@ -1,0 +1,20 @@
+body {
+  width: calc(100% - 0.5em);
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-link {
+  border-bottom: 0.01px solid grey;
+  text-decoration: none;
+}
+
+.page-link:visited {
+  color: black;
+}
+
+.page-link:hover {
+  color: lightgrey;
+  border-bottom: 0.01px solid lightgrey;
+}

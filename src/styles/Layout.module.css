@@ -1,0 +1,210 @@
+.title {
+  font-size: 4rem;
+  text-align: left;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  color: lightgrey;
+}
+.nav-container {
+  position: fixed;
+  padding-top: 1rem;
+  width: 120px;
+  text-align: center;
+}
+.nav-inactive {
+  text-decoration: line-through;
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+.entry-container {
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.entry-author {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.entry-title {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+}
+.entry-subtitle {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.entry-body {
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.25em;
+  position: sticky;
+  padding-top: 0.25em;
+  top: 0em;
+}
+
+.show-header-background {
+  background: white;
+}
+.hide-header-background {
+  background: none;
+}
+
+.page-container {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+.page-title {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.header-logo {
+}
+.header-p {
+  margin: 0;
+}
+.rt-bold {
+  font-weight: bold;
+}
+.no-bullet-list {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+.page-p {
+  font-size: 1.2rem;
+}
+
+.header-center {
+  flex-grow: 4;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 1.8rem;
+  padding-top: 40px;
+
+  /* border: 4px solid black; */
+}
+.show-header-center {
+  visibility: visible;
+}
+.hide-header-center {
+  visibility: hidden;
+}
+.show-header-center {
+  background: white;
+}
+.hide-header-center {
+  background: none;
+}
+.header-right {
+  float: right;
+  border: 3px solid black;
+  width: 114px;
+  height: 114px;
+}
+
+.footer-container {
+  height: 20rem;
+  background: lightskyblue;
+  margin: 8em -0.25em 0 -0.25em;
+}
+
+.home-image {
+  margin-top: 12em;
+  /* position: fixed; */
+  z-index: -1;
+}
+.home-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.issue-contents-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.issue-contents-article-title {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.issue-contents-article-title:visited {
+  color: black;
+}
+.issue-contents-article-title:hover {
+  color: lightgrey;
+}
+.issue-contents-author {
+  font-size: 1.2rem;
+}
+.issue-container {
+  width: 55%;
+  margin: 0 auto;
+}
+.issue-body-container {
+  column-count: 2;
+  column-fill: auto;
+  height: 50vh;
+}
+.issue-contents-article-container {
+  margin-bottom: 1rem;
+}
+.issue-released {
+  margin-top: 0;
+  color: rgb(180, 180, 180);
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+.footnotes {
+  display: grid;
+  grid-template-columns: 3% 1fr;
+}
+.footnote-note {
+  font-size: 1.2em;
+}
+.footnote-number {
+  font-size: 1.2em;
+}
+.footnote-title {
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+.super-script-link {
+  color: grey;
+}
+.super-script-link:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
