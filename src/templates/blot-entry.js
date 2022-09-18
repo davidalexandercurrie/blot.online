@@ -68,7 +68,7 @@ const article = ({ pageContext }) => {
           </h2>
         ))}
         <div className={entryBody}>{renderRichText(bodyRichText, options)}</div>
-        {pageContext.body.references && (
+        {pageContext.body.references.length > 0 && (
           <>
             <h2 className={footnoteTitle}>Notes</h2>
             <div id="entry-footnotes" className={footnotes}>

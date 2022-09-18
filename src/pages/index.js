@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <Layout
       root={true}
-      headerText="“a journal for music, sound, and performance in Aotearoa”"
+      headerText="BLOT: a journal for music, sound, and performance in Aotearoa"
     >
       <Nav />
       <div className={homeImageContainer}>
