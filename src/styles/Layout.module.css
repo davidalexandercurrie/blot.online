@@ -32,7 +32,7 @@
 }
 .entry-container {
   width: 100%;
-  max-width: 60%;
+  max-width: 50%;
   margin: 0 auto;
 }
 .entry-author {
@@ -136,7 +136,7 @@
 
 .footer-container {
   height: 20rem;
-  background: lightskyblue;
+  /* background: lightskyblue; */
   margin: 8em -0.25em 0 -0.25em;
 }
 
@@ -211,4 +211,20 @@
 .scroll-to-element {
   position: absolute;
   margin-top: -7em;
+}
+.article-image-container {
+  margin-top: 4rem;
+}
+.article-image {
+  z-index: -1;
+}
+.article-image-caption {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+.article-image-caption > p {
+  margin: 0;
 }

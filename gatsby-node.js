@@ -31,6 +31,19 @@ exports.createPages = async ({ graphql, actions }) => {
                     raw
                   }
                 }
+                ... on ContentfulImage {
+                  alt
+                  contentful_id
+                  caption {
+                    raw
+                  }
+                  image {
+                    file {
+                      url
+                    }
+                    gatsbyImageData
+                  }
+                }
               }
             }
             slug
@@ -87,6 +100,11 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   result.data.allContentfulArticle.edges.forEach(({ node }) => {
+    const footnotes = [
+      ...node.body.references.filter(
+        reference => reference.__typename == 'ContentfulFootnote'
+      ),
+    ];
     const authors = [...node.author];
     createPage({
       path: `issue-1/${node.slug}`,
@@ -94,6 +112,9 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: node.slug,
         body: node.body,
+        references: {
+          footnotes: footnotes,
+        },
         title: node.title,
         subtitle: node.subtitle,
         headerTitle: node.headerTitle,

@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import '@fontsource/open-sans';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import ReactMarkdown from 'react-markdown';
 import {
   headerContainer,
   headerLogo,
@@ -64,7 +65,7 @@ const Header = ({ headerText, root }) => {
             : hideHeaderCenter
         }`}
       >
-        {headerText}
+        <ReactMarkdown>{headerText}</ReactMarkdown>
       </div>
       <div className={headerRight}></div>
     </header>

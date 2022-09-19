@@ -12,14 +12,14 @@ const IndexPage = () => {
     >
       <Nav />
       <div className={homeImageContainer}>
-        <StaticImage
+        {/* <StaticImage
           className={homeImage}
           src="../images/instagram-launch.png"
           width={640}
           height={640}
           placeholder="none"
           alt="Advertisement for the Blot Launch party"
-        />
+        /> */}
       </div>
     </Layout>
   );
