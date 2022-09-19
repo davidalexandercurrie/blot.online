@@ -109,7 +109,7 @@
 .header-center {
   flex-grow: 4;
   text-align: center;
-  font-family: Open Sans;
+  font-family: Work Sans;
   font-size: 1.8rem;
   padding-top: 40px;
 
@@ -176,7 +176,6 @@
 .issue-body-container {
   column-count: 2;
   column-fill: auto;
-  height: 50vh;
 }
 .issue-contents-article-container {
   margin-bottom: 1rem;
