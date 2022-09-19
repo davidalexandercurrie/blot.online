@@ -10,8 +10,8 @@ const nav = () => {
   return (
     <nav className={navContainer}>
       <div>
-        <Link to="/issue-01" className={navLink}>
-          Issue 01
+        <Link to="/issue-1" className={navLink}>
+          Issue 1
         </Link>
       </div>
       <div className={navInactive}>News</div>

@@ -89,7 +89,7 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allContentfulArticle.edges.forEach(({ node }) => {
     const authors = [...node.author];
     createPage({
-      path: `issue-01/${node.slug}`,
+      path: `issue-1/${node.slug}`,
       component: blotEntry,
       context: {
         slug: node.slug,
