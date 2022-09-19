@@ -52,6 +52,9 @@ exports.createPages = async ({ graphql, actions }) => {
             subtitle
             issueNumber
             headerTitle
+            endText {
+              raw
+            }
           }
         }
       }
@@ -122,6 +125,7 @@ exports.createPages = async ({ graphql, actions }) => {
         issueNumber: node.issueNumber,
         placement: node.placement,
         author: node.author,
+        endText: node.endText,
       },
     });
   });

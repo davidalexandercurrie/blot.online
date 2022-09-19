@@ -22,6 +22,8 @@ import {
   articleImage,
   articleImageContainer,
   articleImageCaption,
+  noBulletList,
+  endText,
 } from '../styles/Layout.module.css';
 
 const article = ({ pageContext }) => {
@@ -30,13 +32,16 @@ const article = ({ pageContext }) => {
   const Caption = ({ children }) => (
     <p className={articleImageCaption}>{children}</p>
   );
-
+  console.log(pageContext.endText);
   const options = {
     renderMark: {
       [MARKS.BOLD]: text => <Bold>{text}</Bold>,
     },
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
+      [BLOCKS.UL_LIST]: (node, children) => (
+        <ul className={noBulletList}>{children}</ul>
+      ),
       [INLINES.EMBEDDED_ENTRY]: (node, children) => {
         const entry = pageContext.references.footnotes.find(
           element => element.contentful_id === node.data.target.contentful_id

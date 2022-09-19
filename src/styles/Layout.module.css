@@ -99,8 +99,9 @@
   font-weight: bold;
 }
 .no-bullet-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-  font-size: 1.2rem;
 }
 .page-p {
   font-size: 1.2rem;
@@ -162,6 +163,10 @@
   font-size: 1.5rem;
   font-weight: 900;
 }
+.issue-contents-article-title > p {
+  margin: 0;
+  padding: 0;
+}
 .issue-contents-article-title:visited {
   color: black;
 }
@@ -181,6 +186,7 @@
 }
 .issue-contents-article-container {
   margin-bottom: 1rem;
+  display: inline-block;
 }
 .issue-released {
   margin-top: 0;
@@ -229,4 +235,6 @@
 }
 .article-image-caption > p {
   margin: 0;
+}
+.end-text {
 }

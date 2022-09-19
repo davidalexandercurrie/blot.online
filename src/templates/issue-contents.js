@@ -10,6 +10,7 @@ import {
   issueReleased,
 } from '../styles/Layout.module.css';
 import { Link } from 'gatsby';
+import ReactMarkdown from 'react-markdown';
 
 const issueContents = ({ pageContext }) => {
   console.log(pageContext);
@@ -21,7 +22,7 @@ const issueContents = ({ pageContext }) => {
       <>
         <div className={issueContentsArticleContainer}>
           <Link className={issueContentsArticleTitle} to={article.slug}>
-            {article.headerTitle}
+            <ReactMarkdown>{article.headerTitle}</ReactMarkdown>
           </Link>
 
           {authors}
