@@ -5,6 +5,7 @@ import {
   pageTitle,
   noBulletList,
   pageP,
+  supportP,
 } from '../styles/Layout.module.css';
 
 const about = ({ location }) => {
@@ -43,11 +44,11 @@ const about = ({ location }) => {
         <p className={pageP}>
           We are very grateful to the following for their generous support:
         </p>
-        <li className={noBulletList}>Chartwell Trust</li>
-        <li className={noBulletList}>John & Jo Gow</li>
-        <li className={noBulletList}>Michael Lett & Andrew Thomas</li>
-        <li className={noBulletList}>David Currie</li>
-        <li className={noBulletList}>Marcus Jackson</li>
+        <p className={supportP}>Chartwell Trust</p>
+        <p className={supportP}>John & Jo Gow</p>
+        <p className={supportP}>Michael Lett & Andrew Thomas</p>
+        <p className={supportP}>David Currie</p>
+        <p className={supportP}>Marcus Jackson</p>
       </div>
     </Layout>
   );
