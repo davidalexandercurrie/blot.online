@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/issue-1"
+  status = 200
