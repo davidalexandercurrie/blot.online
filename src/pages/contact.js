@@ -1,11 +1,13 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import Nav from '../components/nav';
 import { pageContainer, pageTitle, pageP } from '../styles/Layout.module.css';
 
 const contact = () => {
   return (
     <Layout>
       <div className={pageContainer}>
+        <Nav />
         <h1 className={pageTitle}>Contact</h1>
         <p className={pageP}>
           We welcome responses, proposals, criticism, support, all the feels.
