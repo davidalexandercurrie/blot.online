@@ -17,7 +17,7 @@ import {
 
 const Logo = () => {
   return (
-    <Link to="/" className={headerLogo}>
+    <Link to="/issue-1" className={headerLogo}>
       <StaticImage
         src="../images/blot-logo-transparent.png"
         width={120}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import Nav from '../components/nav';
 import {
   issueContentsTitle,
   issueContentsAuthor,
@@ -37,6 +38,7 @@ const issueContents = ({ pageContext }) => {
   });
   return (
     <Layout>
+      <Nav />
       <div className={issueContainer}>
         <h1 className={issueContentsTitle}>{pageContext.title}</h1>
         <h3 className={issueReleased}>{pageContext.released}</h3>
