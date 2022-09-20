@@ -264,13 +264,13 @@
 @media only screen and (max-width: 1000px) {
   .entry-container {
     width: 100%;
-    max-width: 98%;
+    max-width: 90%;
     margin: 0 auto;
   }
   .issue-container {
     width: 100%;
     margin: 0 auto;
-    max-width: 98%;
+    max-width: 90%;
   }
   .issue-body-container {
     column-count: 1;
@@ -295,7 +295,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   .nav-container {
     width: 100%;
@@ -323,7 +323,7 @@
     grid-template-columns: 5% 1fr;
   }
   .page-container {
-    width: 98%;
+    width: 95%;
     margin: 0 auto;
     font-size: 1.4em;
   }
