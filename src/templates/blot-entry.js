@@ -149,7 +149,7 @@ const article = ({ pageContext }) => {
             pageContext.author.map(author => {
               return (
                 <ReactMarkdown>
-                  {author.length > 0 && author.shortBio.shortBio}
+                  {author.shortBio ? author.shortBio.shortBio : ' '}
                 </ReactMarkdown>
               );
             })}

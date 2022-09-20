@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import Nav from '../components/nav';
 import {
   pageContainer,
   pageTitle,
@@ -12,6 +13,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const about = ({ location }) => {
   return (
     <Layout location>
+      <Nav />
       <div className={pageContainer}>
         <h1 className={pageTitle}>About</h1>
         <p className={pageP}>
@@ -52,10 +54,10 @@ const about = ({ location }) => {
         <p className={supportP}>Marcus Jackson</p>
         <StaticImage
           src="../images/chartwell.jpg"
-          width={640}
-          height={640}
+          width={240}
+          height={240}
           placeholder="none"
-          alt="Advertisement for the Blot Launch party"
+          alt="chartwell logo"
         />
       </div>
     </Layout>
