@@ -18,3 +18,8 @@ body {
   color: lightgrey;
   border-bottom: 0.01px solid lightgrey;
 }
+@media only screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+}
