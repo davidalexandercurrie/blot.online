@@ -1,3 +1,6 @@
 [[redirects]]
   from = "/"
   to = "/issue-1"
+
+  # update build image
+  
