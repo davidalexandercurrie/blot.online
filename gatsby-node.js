@@ -119,7 +119,7 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   result.data.allContentfulArticle.edges.forEach(({ node }) => {
-    console.log('hi');
+    console.log('hi test');
     const footnotes = [
       ...node.body.references.filter(
         reference => reference.__typename == 'ContentfulFootnote'
