@@ -79,6 +79,7 @@ exports.createPages = async ({ graphql, actions }) => {
               author {
                 name
               }
+              authorDisplay
               slug
             }
           }
@@ -99,6 +100,7 @@ exports.createPages = async ({ graphql, actions }) => {
         number: node.issueNumber,
         date: node.releaseDate,
         released: node.released,
+        authorDisplay: node.authorDisplay,
       },
     });
   });

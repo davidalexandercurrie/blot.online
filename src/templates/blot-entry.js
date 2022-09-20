@@ -32,7 +32,14 @@ const article = ({ pageContext }) => {
   const Caption = ({ children }) => (
     <p className={articleImageCaption}>{children}</p>
   );
-  console.log(pageContext.endText);
+
+  const authors =
+    pageContext.author.length > 1 ? (
+      <h2 className={entryAuthor}>{pageContext.authorDisplay}</h2>
+    ) : (
+      <h2 className={entryAuthor}>{pageContext.author[0].name}</h2>
+    );
+
   const options = {
     renderMark: {
       [MARKS.BOLD]: text => <Bold>{text}</Bold>,
@@ -95,11 +102,7 @@ const article = ({ pageContext }) => {
           <ReactMarkdown>{pageContext.title}</ReactMarkdown>
         </h1>
         <h2 className={entrySubtitle}>{pageContext.subtitle}</h2>
-        {pageContext.author.map(author => (
-          <h2 key={author.name} className={entryAuthor}>
-            {author.name}
-          </h2>
-        ))}
+        {authors}
         <div className={entryBody}>{renderRichText(bodyRichText, options)}</div>
         {pageContext.references.footnotes.length > 0 && (
           <>

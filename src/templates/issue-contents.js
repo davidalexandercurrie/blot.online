@@ -15,9 +15,14 @@ import ReactMarkdown from 'react-markdown';
 const issueContents = ({ pageContext }) => {
   console.log(pageContext);
   const articles = pageContext.articles.map(article => {
-    const authors = article.author.map(author => {
-      return <div className={issueContentsAuthor}>{author.name}</div>;
-    });
+    console.log(article.authorDisplay);
+    const authors =
+      article.author.length > 1 ? (
+        <div className={issueContentsAuthor}>{article.authorDisplay}</div>
+      ) : (
+        <div className={issueContentsAuthor}>{article.author[0].name}</div>
+      );
+
     return (
       <>
         <div className={issueContentsArticleContainer}>
