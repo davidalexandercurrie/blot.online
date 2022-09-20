@@ -6,6 +6,7 @@ import { pageContainer, pageTitle, pageP } from '../styles/Layout.module.css';
 const contact = () => {
   return (
     <Layout>
+      <Nav></Nav>
       <div className={pageContainer}>
         <h1 className={pageTitle}>Contact</h1>
         <p className={pageP}>

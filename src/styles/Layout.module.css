@@ -306,7 +306,7 @@ strong {
     margin: 0;
     margin-top: 0em;
     margin-bottom: 2em;
-    position: relative;
+    position: static;
   }
   .nav-link {
     font-size: 1.8em;
