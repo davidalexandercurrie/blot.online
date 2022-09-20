@@ -5,6 +5,7 @@ import { homeImage, homeImageContainer } from '../styles/Layout.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
+  console.log(`it's very late i need to sleep`);
   return (
     <Layout
       root={true}
