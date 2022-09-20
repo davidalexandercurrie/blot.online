@@ -7,7 +7,6 @@ const contact = () => {
   return (
     <Layout>
       <div className={pageContainer}>
-        <Nav />
         <h1 className={pageTitle}>Contact</h1>
         <p className={pageP}>
           We welcome responses, proposals, criticism, support, all the feels.
