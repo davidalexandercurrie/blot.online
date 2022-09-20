@@ -14,7 +14,7 @@ const nav = () => {
           Issue 1
         </Link>
       </div>
-      <div className={navInactive}>News</div>
+      {/* <div className={navInactive}>News</div> */}
       <div>
         <Link to="/about" className={navLink}>
           About
@@ -26,7 +26,7 @@ const nav = () => {
         </Link>
       </div>
 
-      <div className={navInactive}>Archive</div>
+      {/* <div className={navInactive}>Archive</div> */}
     </nav>
   );
 };

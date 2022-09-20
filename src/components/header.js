@@ -34,7 +34,7 @@ const Header = ({ headerText, root }) => {
   const ref = useRef();
   const handleScroll = () => {
     const position = window.pageYOffset;
-    setScrollPosition(position > 500 ? true : false);
+    setScrollPosition(position > 1000 ? true : false);
   };
 
   useEffect(() => {

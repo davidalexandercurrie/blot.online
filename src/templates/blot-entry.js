@@ -22,8 +22,11 @@ import {
   articleImage,
   articleImageContainer,
   articleImageCaption,
+  audioCaption,
   noBulletList,
   endText,
+  audioPlayer,
+  artistBio,
 } from '../styles/Layout.module.css';
 
 const article = ({ pageContext }) => {
@@ -63,23 +66,39 @@ const article = ({ pageContext }) => {
         );
       },
       [BLOCKS.EMBEDDED_ENTRY]: node => {
-        const { gatsbyImageData } = node.data.target.image;
-        const { alt, caption } = node.data.target;
-        return (
-          <>
-            <GatsbyImage
-              imgClassName={articleImage}
-              className={articleImageContainer}
-              image={getImage(gatsbyImageData)}
-              alt={alt}
-            />
-            {caption && (
-              <div className={articleImageCaption}>
-                {renderRichText(caption)}
+        console.log(node.data.target);
+        if (node.data.target.__typename == 'ContentfulImage') {
+          const { gatsbyImageData } = node.data.target.image;
+          const { alt, caption } = node.data.target;
+          return (
+            <>
+              <GatsbyImage
+                imgClassName={articleImage}
+                className={articleImageContainer}
+                image={getImage(gatsbyImageData)}
+                alt={alt}
+              />
+              {caption && (
+                <div className={articleImageCaption}>
+                  {renderRichText(caption)}
+                </div>
+              )}
+            </>
+          );
+        } else if (node.data.target.__typename == 'ContentfulAudio') {
+          const { caption } = node.data.target;
+          return (
+            <>
+              <div className={audioPlayer}>
+                <audio controls>
+                  <source src={node.data.target.audioFile.file.url} />
+                  Your browser doesn't support mp3s
+                </audio>
+                <p className={audioCaption}>{renderRichText(caption)}</p>
               </div>
-            )}
-          </>
-        );
+            </>
+          );
+        }
       },
       [BLOCKS.EMBEDDED_ASSET]: node => {
         return (
@@ -125,6 +144,11 @@ const article = ({ pageContext }) => {
             </div>
           </>
         )}
+        <div className={artistBio}>
+          {pageContext.author.map(author => {
+            return <ReactMarkdown>{author.shortBio.shortBio}</ReactMarkdown>;
+          })}
+        </div>
       </div>
     </Layout>
   );

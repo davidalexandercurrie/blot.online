@@ -32,7 +32,20 @@ exports.createPages = async ({ graphql, actions }) => {
                     raw
                   }
                 }
+                ... on ContentfulAudio {
+                  contentful_id
+                  __typename
+                  audioFile {
+                    file {
+                      url
+                    }
+                  }
+                  caption {
+                    raw
+                  }
+                }
                 ... on ContentfulImage {
+                  __typename
                   alt
                   contentful_id
                   caption {
@@ -127,7 +140,7 @@ exports.createPages = async ({ graphql, actions }) => {
         id: node.id,
         issueNumber: node.issueNumber,
         placement: node.placement,
-        author: node.author,
+        author: authors,
         authorDisplay: node.authorDisplay,
         endText: node.endText,
       },
