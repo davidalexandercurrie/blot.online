@@ -145,9 +145,14 @@ const article = ({ pageContext }) => {
           </>
         )}
         <div className={artistBio}>
-          {pageContext.author.map(author => {
-            return <ReactMarkdown>{author.shortBio.shortBio}</ReactMarkdown>;
-          })}
+          {pageContext.author.length > 0 &&
+            pageContext.author.map(author => {
+              return (
+                <ReactMarkdown>
+                  {author.length > 0 && author.shortBio.shortBio}
+                </ReactMarkdown>
+              );
+            })}
         </div>
       </div>
     </Layout>

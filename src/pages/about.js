@@ -7,6 +7,7 @@ import {
   pageP,
   supportP,
 } from '../styles/Layout.module.css';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const about = ({ location }) => {
   return (
@@ -49,6 +50,13 @@ const about = ({ location }) => {
         <p className={supportP}>Michael Lett & Andrew Thomas</p>
         <p className={supportP}>David Currie</p>
         <p className={supportP}>Marcus Jackson</p>
+        <StaticImage
+          src="../images/chartwell.jpg"
+          width={640}
+          height={640}
+          placeholder="none"
+          alt="Advertisement for the Blot Launch party"
+        />
       </div>
     </Layout>
   );

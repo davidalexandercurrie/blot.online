@@ -7,7 +7,7 @@ import {} from '../styles/Layout.module.css';
 const pageStyles = {
   margin: `0 auto`,
   padding: `0 0rem`,
-  fontFamily: `Work Sans`,
+  fontFamily: `Work Sans, sans-serif`,
 };
 
 export default function Layout({ children, headerText, root }) {

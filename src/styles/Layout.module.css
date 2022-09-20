@@ -99,6 +99,9 @@
 .rt-bold {
   font-weight: bold;
 }
+strong {
+  font-weight: bold;
+}
 .no-bullet-list {
   margin: 0;
   padding: 0;
