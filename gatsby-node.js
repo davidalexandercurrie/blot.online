@@ -20,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 shortBio
               }
             }
+            authorDisplay
             body {
               raw
               references {
@@ -125,6 +126,7 @@ exports.createPages = async ({ graphql, actions }) => {
         issueNumber: node.issueNumber,
         placement: node.placement,
         author: node.author,
+        authorDisplay: node.authorDisplay,
         endText: node.endText,
       },
     });

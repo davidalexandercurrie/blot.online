@@ -189,6 +189,7 @@
 .issue-contents-article-container {
   margin-bottom: 1rem;
   display: inline-block;
+  width: 100%;
 }
 .issue-released {
   margin-top: 0;
@@ -240,7 +241,7 @@
 }
 .end-text {
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .entry-container {
     width: 100%;
     max-width: 95%;
